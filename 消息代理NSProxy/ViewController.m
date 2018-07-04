@@ -18,7 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:[MyProxy proxyWithTarget:self] selector:@selector(test) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+                                                  target:[MyProxy proxyWithTarget:self]
+                                                selector:@selector(test)
+                                                userInfo:nil
+                                                 repeats:YES];
     
 }
 
